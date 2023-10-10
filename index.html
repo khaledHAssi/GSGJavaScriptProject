@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="player" id="playerOne">
+            <img src="assets/img/PlayerOne.png" class="playerImg" alt="" />
+            <h2 style="color: #0e0091">Player 1</h2>
+            <p id="#total1">Total Is </p>
+            <p id="#current1">Current Is </p>
+
+        </div>
+        <div class="img" id="#imgs">
+            <img src="assets/img/dice1.png" id="#img-1" class="dice" alt="" />
+        </div>
+        <div class="player" id="playerTwo">
+            <img src="assets/img/PlayerTwo.png" class="playerImg" alt="" />
+            <h2 style="color: #0e0091">Player 2</h2>
+            <p id="#total2">Total Is </p>
+            <p id="#current2">Current Is </p>
+        </div>
+    </div>
+    <section class="gameSettings">
+        <div class="btns">
+            <button id="#roll" class="btn" onclick="roll(playerIndex)">roll</button>
+            <button id="#hold" class="btn" onclick="hold(playerIndex)">hold</button>
+            <button id="#NewGame" class="btn" onclick="NewGame()">New game</button>
+        </div>
+        <div class="custom">
+            <span class="CustomText">you can custom final score</span>
+            <input id="#" type="number" placeholder="30"  class="customNumber" onclick="">
+        </div>
+    </section>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
